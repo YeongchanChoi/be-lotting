@@ -1,0 +1,176 @@
+{
+  "201013": {
+    "id": 201013,
+    "userinfo": {
+      "name": "임종영",
+      "phone": "01032430008",
+      "firstid": "680512",
+      "secondid": "1684229",
+      "email": null,
+      "come": null,
+      "bank": "국민",
+      "bankid": "936825-01-056083",
+      "bankwho": "임종영",
+      "bankwhere": "h",
+      "getpost": "서울시 관악구 남부순환로 246나길 22-10",
+      "post": ""
+    },
+    "data": {
+      "submitturn": "1차",
+      "type": "84A",
+      "group": "마",
+      "turn": 1,
+      "submitdate": "2022-03-31",
+      "trustsubmitdate": null,
+      "submitprice": 572661000,
+      "earnestdate": "2022-03-25",
+      "earnest": 5000000
+    },
+    "registerprice": 572661000,
+    "registerdate": "2022-03-31",
+    "ext": {
+      "manage": null,
+      "managename": "민소영",
+      "ext": null
+    },
+    "order": [
+      {
+        "findate": "2022-03-31",
+        "duedate": null,
+        "pay": 10000000,
+        "work": 20000000,
+        "move": 1,
+        "sumprice": 30000000,
+        "isclear": true,
+        "payprice": 0
+      },
+      {
+        "duedate": "2022-05-01",
+        "findate": "2023-05-31",
+        "pay": 23000000,
+        "discount": null,
+        "work": 10000000,
+        "move": "52,53",
+        "sumprice": 33000000,
+        "isclear": true,
+        "payprice": 0
+      },
+      {
+        "duedate": "2022-10-01",
+        "findate": "미납",
+        "pay": 29000000,
+        "discount": null,
+        "work": 5000000,
+        "move": null,
+        "sumprice": 34000000,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": "2023-01-31",
+        "findate": "미납",
+        "pay": 29000000,
+        "discount": null,
+        "work": null,
+        "move": null,
+        "sumprice": 29000000,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": "협동조합 설립 시",
+        "findate": "협동조합 설립 시",
+        "pay": 29000000,
+        "discount": null,
+        "del": null,
+        "work": null,
+        "move": null,
+        "sumprice": 29000000,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": "건축심의 완료 시",
+        "findate": "건축심의 완료 시",
+        "pay": 29000000,
+        "discount": null,
+        "del": null,
+        "work": null,
+        "move": null,
+        "sumprice": 29000000,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": "사업승인 완료 시",
+        "findate": "사업승인 완료 시",
+        "pay": 29000000,
+        "discount": null,
+        "del": null,
+        "work": 5000000,
+        "move": null,
+        "sumprice": 34000000,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": "착공 시",
+        "findate": "착공 시",
+        "pay": 52000000,
+        "discount": null,
+        "work": null,
+        "move": null,
+        "sumprice": 52000000,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": null,
+        "findate": null,
+        "pay": null,
+        "discount": null,
+        "work": null,
+        "move": null,
+        "sumprice": null,
+        "isclear": false,
+        "payprice": 0
+      },
+      {
+        "duedate": null,
+        "findate": null,
+        "pay": null,
+        "discount": null,
+        "work": null,
+        "move": null,
+        "sumprice": null,
+        "isclear": false,
+        "payprice": 0
+      }
+    ],
+    "loandata": {
+      "loandate": "2024-05-01",
+      "price1": 22500000,
+      "price2": null,
+      "selfdate": null,
+      "selfprice": null,
+      "sumprice": null,
+      "balance": null
+    },
+    "cancel": {
+      "canceldate": null,
+      "paybackdate": null,
+      "paybackprice": null
+    },
+    "fileinfo": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false,
+      "F": false,
+      "G": false,
+      "H": false,
+      "I": false
+    }
+  }
+}
