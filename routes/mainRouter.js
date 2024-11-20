@@ -36,22 +36,40 @@ router.get("/api/searchname/:name?", async (req, res) => {
   }
 });
 
+// Express 라우터 파일 내
+
 router.get("/api/searchnumber/:number?", async (req, res) => {
   try {
     const number = req.params.number || "";
-    const query = number ? { id: number } : {};
+
+    // `number`가 제공되면 부분 매칭을 수행
+    let query = {};
+    if (number) {
+      query = {
+        $expr: {
+          $regexMatch: {
+            input: { $toString: "$id" }, // `id`를 문자열로 변환
+            regex: number,
+            options: "i" // 숫자에는 대소문자 구분이 없지만, 일관성을 위해 설정
+          }
+        }
+      };
+    }
+
     const result = await tbMainModel
       .find(
         query,
         "id userinfo.name userinfo.sort data.type data.group data.turn data.submitturn data.submitdate"
       )
-      .sort({ id: 1 }); // id 필드를 기준으로 오름차순 정렬
+      .sort({ id: 1 }); // `id` 기준 오름차순 정렬
+
     res.json(result);
   } catch (error) {
-    console.error("Error fetching data:", error);
-    res.status(500).send("Internal Server Error");
+    console.error("데이터 가져오는 중 오류:", error);
+    res.status(500).send("내부 서버 오류");
   }
 });
+
 
 router.get("/api/userinfo/:id", async (req, res) => {
   try {
