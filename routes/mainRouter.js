@@ -50,9 +50,9 @@ router.get("/api/searchnumber/:number?", async (req, res) => {
           $regexMatch: {
             input: { $toString: "$id" }, // `id`를 문자열로 변환
             regex: number,
-            options: "i" // 숫자에는 대소문자 구분이 없지만, 일관성을 위해 설정
-          }
-        }
+            options: "i", // 숫자에는 대소문자 구분이 없지만, 일관성을 위해 설정
+          },
+        },
       };
     }
 
@@ -69,7 +69,6 @@ router.get("/api/searchnumber/:number?", async (req, res) => {
     res.status(500).send("내부 서버 오류");
   }
 });
-
 
 router.get("/api/userinfo/:id", async (req, res) => {
   try {
@@ -325,7 +324,6 @@ router.put("/api/userinfo/:userid", async (req, res) => {
 
 async function getMaxIdFromDatabase() {
   const result = await tbMainModel.findOne().sort({ id: -1 }).exec();
-  console.log(result);
   if (result) {
     return result.id;
   } else {
